@@ -75,12 +75,7 @@ const App = () => {
         return ()=> clearInterval(interval);},[isActive, timeSpent]);
 
 
-      useEffect(()=>{
-        audio.addEventListener('ended',()=>setBeepPlaying(false));
-        return()=>{
-        audio.addEventListener('ended',()=>setBeepPlaying(false))};
-
-      },[])
+        
 
       function reset(){
         setBkrLength(5*60);
